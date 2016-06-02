@@ -18,3 +18,7 @@ The system must provide :
 * http://bl.ocks.org/mbostock/3883245
 * http://bl.ocks.org/mbostock/3887235
 * http://electron.atom.io/docs/guides/
+
+## Authors
+
+Karl Wavrant
