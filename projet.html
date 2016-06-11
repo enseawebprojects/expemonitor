@@ -4,7 +4,17 @@
 <meta charset="utf-8">
 
 	<title> Ensea project </title>
-	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+<form method="post" action="upload.php" enctype="multipart/form-data">
+<input type="hidden" name="Max_File_Size" value="1000000000">
+<input type="file" name="data">
+<input type="text" value="envoyer le fichier">
+</form>
+  </body>
+</html>
+<!--	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script> 
 	function load_data(){
 		file= new FileReader;
@@ -14,14 +24,4 @@
 		});
 	}
 		    
-        </script>
-  </head>
-  <body>
-<form method="post" action="upload.php" enctype="multipart/form-data">
-<input type="hidden" name="Max_File_Size" value="1000000000">
-<input type="file" name="avatar">
-<input type="submit" name=envoyer value="envoyer le fichier">
-
-</form>
-  </body>
-</html>
+        </script> -->
