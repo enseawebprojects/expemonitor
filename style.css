@@ -1,0 +1,30 @@
+
+	    h1{
+		color:blue;
+		border: 20px solid red;
+		padding:30px;
+		text-align:center;
+		margin:50px;	    
+	       }
+	
+	bidule{
+		color:pink;
+		border:20px blue solid;
+		padding:10px;
+		text-align:center;
+                padding:30px;
+		display:block;
+	       }	
+
+	   img{
+	    display:block;
+	    margin:auto;
+	    margin-bottom:100px;
+	    margin-top:100px;
+            border:solid blue;
+            transition:all 10s;
+	    padding:20px;
+	   }
+
+
+
