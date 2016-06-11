@@ -9,8 +9,9 @@
   <body>
 <form method="post" action="upload.php" enctype="multipart/form-data">
 <input type="hidden" name="Max_File_Size" value="1000000000">
-<input type="file" name="data">
-<input type="text" value="envoyer le fichier">
+
+<input type="submit" value="Valider" />
+<input type="text">
 </form>
   </body>
 </html>
@@ -22,6 +23,6 @@
 		d3.csv("data.csv",function(data){
 		console.log(data[0]);
 		});
-	}
+	}<input type="file" name="data">
 		    
         </script> -->
