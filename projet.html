@@ -4,22 +4,32 @@
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 	<title> Ensea project </title>
+<script> 
+	var d=0;
+	function dostuff()
+	{	
+		d+=10000;
+		document.getElementById("logo").style.transform="rotateY("+d+"deg)";
 
+	}
+        </script>
   </head>
   <body>
   <center>
+  
   <h1> Projet expemonitor </h1>
- 
-<img class="image" src="graph.png" height="300" width="300" >
-<img src="camembert.jpg" height="300" width="300" class="image" >
+<img src="logo_ensea.png" height="110" width="110" id=logo onclick="dostuff()" >
+<img  src="graph.png" height="300" width="300" >
+<img src="camembert.jpg" height="300" width="300"  >
+<img src="histogram.png" height="300" width="300"  >
 
 <div class="selecteur">
 <form method="post" action="upload.php" enctype="multipart/form-data">
+<p> choisissez votre type de graphique et vos données</p>
 <select name="choix">
-    <option value="choix1">linear chart</option>
+    <option value="choix1">Line chart</option>
     <option value="choix2">Pie chart</option>
-    <option value="choix3">choix 3</option>
-    <option value="choix4">Choix 4</option>
+    <option value="choix3">Histogram</option>
     </select>
     <input type="file" name="data_recu"/>
 <input type="submit" value="envoyer"/>
@@ -28,12 +38,11 @@
 
 </div>
 </center>
-
-
-
-
-
   </body>
-  <footer> réalisé par karl wavrant </footer>
+  <div class="bottom">
+  <p> ENSEA WEB PROJECT </p>
+  <p> karl wavrant </p>
+  
+  </div>
   
 </html>
