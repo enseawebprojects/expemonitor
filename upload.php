@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 	
 	<title> Ensea project </title>
-	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-	<?php
+<?php
 // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
 if (isset($_FILES['data_recu']) AND $_FILES['data_recu']['error'] == 0)
 {
@@ -24,18 +22,11 @@ if (isset($_FILES['data_recu']) AND $_FILES['data_recu']['error'] == 0)
                         echo "L'envoi a bien été effectué !";
                 }
         }
+        echo "il y a peut être un problème";
 }
+ echo "il y a un problème";
 ?>
 	
-	<script> 
-	var data=basename($_FILES['data_recu']['name']);
-	function load_data(){
-		d3.csv("data.csv",function(data){
-		console.log(data[0]);
-		});
-	}
-		    
-  </script> 
   </head>
   <body>
 

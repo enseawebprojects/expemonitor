@@ -4,25 +4,22 @@
 <meta charset="utf-8">
 
 	<title> Ensea project </title>
-
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script> 
+	function load_data(){
+		d3.csv("upload/datatest.csv",function(data){
+		console.log(data[0]);
+		});
+	}
+		    
+  </script> 
   </head>
   <body>
 <form method="post" action="upload.php" enctype="multipart/form-data">
 <input type="hidden" name="Max_File_Size" value="1000000000">
 
 <input type="submit" value="envoyer" />
-<input type="file" name="data">
+<input type="file" name="data_recu">
 </form>
   </body>
 </html>
-<!--	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	<script> 
-	function load_data(){
-		file= new FileReader;
-		
-		d3.csv("data.csv",function(data){
-		console.log(data[0]);
-		});
-	}<input type="file" name="data">
-		    
-        </script> -->
