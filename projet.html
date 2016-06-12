@@ -7,7 +7,7 @@
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script type ="text/javascript">
 	d3.csv("upload/datatest.csv",function(data){
-		console.log(data);
+	output.innerHTML = data;
 for(var i=0;i<data.length;i++)
 		{
 			console.log(data[i]);
@@ -20,5 +20,8 @@ for(var i=0;i<data.length;i++)
 <input type="file" name="data_recu"/>
 <input type="submit" value="envoyer"/>
 </form>
+<p>
+  les données envoyées sont : <span id="output"></span>
+</p>
   </body>
 </html>
