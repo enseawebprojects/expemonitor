@@ -3,7 +3,6 @@
   <head>
 <meta charset="utf-8">
 <title> Ensea project </title>
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <?php
 // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
 if (isset($_FILES['data_recu']) AND $_FILES['data_recu']['error'] == 0)
@@ -28,17 +27,7 @@ else{
      echo "il y a un problème";
     }
 }
-
-
 ?>
-	<script type ="text/javascript">
-	d3.csv("upload/datatest.csv",function(data){
-for(var i=0;i<data.length;i++)
-		{
-			console.log(data[i]);
-		}
-		});
-    </script> 
 	
   </head>
 
