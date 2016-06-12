@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-<meta charset="utf-8">
-
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 	<title> Ensea project </title>
-	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	<script type ="text/javascript">
-	function lecture_data(){
-		d3.csv("upload/datatest.csv",function(data){
-		console.log(data);
-for(var i=0;i<data.length;i++)
-		{
-			console.log(data[i]);
-		}
-		});
-}
-    </script> 
+
   </head>
   <body>
+  <center>
+  <h1> Projet expemonitor </h1>
+ 
+<img class="image" src="graph.png" height="300" width="300" >
+<img src="camembert.jpg" height="300" width="300" class="image" >
+
+<div class="selecteur">
 <form method="post" action="upload.php" enctype="multipart/form-data">
-<input type="file" name="data_recu"/>
+<select name="choix">
+    <option value="choix1">linear chart</option>
+    <option value="choix2">Pie chart</option>
+    <option value="choix3">choix 3</option>
+    <option value="choix4">Choix 4</option>
+    </select>
+    <input type="file" name="data_recu"/>
 <input type="submit" value="envoyer"/>
+<br><br/>
 </form>
-<p>
-  les données envoyées sont <span id="output"></span>
-</p>
+
+</div>
+</center>
+
+
+
+
+
   </body>
+  <footer> réalisé par karl wavrant </footer>
+  
 </html>
