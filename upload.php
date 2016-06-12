@@ -32,7 +32,7 @@ else{
 
 ?>
 	<script type ="text/javascript">
-	d3.csv.parse("upload/datatest.csv",function(data){
+	d3.csv("upload/datatest.csv",function(data){
 for(var i=0;i<data.length;i++)
 		{
 			console.log(data[i]);
