@@ -6,7 +6,12 @@
 	<title> Ensea project </title>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script type ="text/javascript">
-	d3.csv("upload/datatest.csv",function(data){console.log(data[0]);});
+	d3.csv("upload/datatest.csv",function(data){
+for(var i=0;i<data.length;i++)
+		{
+			console.log(data[i]);
+		}
+		});
     </script> 
   </head>
   <body>
