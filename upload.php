@@ -26,8 +26,6 @@ if (isset($_FILES['data_recu']) AND $_FILES['data_recu']['error'] == 0)
 else{
      echo "il y a un problème";
     }
-}
-
 
 ?>
 
